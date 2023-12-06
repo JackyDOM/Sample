@@ -9,6 +9,7 @@ function Carts() {
   useEffect(() => {
     const fetchCartData = async () => {
       try {
+        // jj
         const cartsCollectionRef = collection(db, 'Carts');
         const snapshot = await getDocs(cartsCollectionRef);
 
