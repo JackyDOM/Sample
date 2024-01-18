@@ -70,3 +70,21 @@ const FoodProvinceList = () => {
 };
 
 export default FoodProvinceList;
+
+
+=========================================
+{imageBanner.map((image, index) => (
+          <div key={image.id} className="relative group">
+            <img
+              className='w-[1800px] object-cover h-[400px] mt-3 pl-5 pr-5'
+              src={image.img}
+              alt={`banner-${index}`}
+            />
+            <div className="absolute inset-0 flex items-center justify-center 
+            opacity-0 group-hover:opacity-100 transition duration-300 bg-black bg-opacity-50">
+              <div className="text-white text-center font-abc">
+                <p className="text-6xl font-semibold cursor-pointer">{texts[index]}</p>
+              </div>
+            </div>
+          </div>
+        ))}
